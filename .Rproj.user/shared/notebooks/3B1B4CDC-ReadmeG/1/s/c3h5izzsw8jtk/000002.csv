@@ -1,0 +1,7 @@
+"0","graphic1 <- ggplot(data = cpemorevuln, mapping = aes(x = total, y = title, fill = as.factor(title)))"
+"0",""
+"0","        graphic1 + geom_bar(stat = 'identity') +"
+"0","          xlab(""Total de vulnerabilidades"") +"
+"0","          ylab(""CPE"") +"
+"0","          ggtitle(paste(""Gráfico de los 30 CPEs más vulnerables de"",producto,sep = "" "")) +"
+"0","          labs(fill = ""CPEs"")"

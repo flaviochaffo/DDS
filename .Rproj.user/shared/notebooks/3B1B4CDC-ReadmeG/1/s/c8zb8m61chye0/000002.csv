@@ -1,0 +1,7 @@
+"0","graphic1 <- ggplot(data = TOPCAPEC, mapping = aes(x = total, y = CAPEC, fill = as.factor(total)))"
+"0",""
+"0","graphic1 + geom_bar(stat = 'identity') +"
+"0","  xlab(""Total de CAPECs"") +"
+"0","  ylab(""CAPEC"") +"
+"0","  ggtitle(paste(""Gráfico de los TOP 40 Amenazas en"",producto,sep = "" "")) +"
+"0","  labs(fill = ""CAPECs"")"
