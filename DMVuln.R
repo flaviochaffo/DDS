@@ -11,7 +11,7 @@ library(stringr)
 #CPEVULN <- function(producto){
 
 
-  producto = c("Siemens","Rockwell")
+  producto = c("rockwell")
   print(class(producto))
   print(producto[3])
   i = 0
@@ -72,12 +72,12 @@ library(stringr)
 #          }
 
 #        cpemorevuln$title <- str_remove_all(cpemorevuln$title,matchstr)
-        graphic1 <- ggplot(data = cpemorevuln, mapping = aes(x = total, y = title, fill = as.factor(color)))
+        graphic1 <- ggplot(data = cpemorevuln, mapping = aes(x = total, y = title, fill = as.factor(title)))
 
         graphic1 + geom_bar(stat = 'identity') +
           xlab("Total de vulnerabilidades") +
           ylab("CPE") +
-          ggtitle(paste("Gráfico de los 20 CPEs más vulnerables de",producto,sep = " ")) +
+          ggtitle(paste("Gráfico de los 30 CPEs más vulnerables de",producto,sep = " ")) +
           labs(fill = "CPEs")
 
       }
